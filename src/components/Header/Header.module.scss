@@ -1,0 +1,48 @@
+.header {
+  padding: 20px;
+  background-color: rgb(107 114 128);
+  font-size: 18px;
+  display: grid;
+  grid-template-columns: 400px 1fr 200px;
+  align-items: center;
+  &Logo {
+    display: flex;
+    align-items: center;
+    img {
+      width: 50px;
+      height: 50px;
+    }
+    span {
+      font-size: 20px;
+      font-weight: 600;
+      margin-left: 20px;
+    }
+  }
+  .current {
+    display: flex;
+    &Item {
+      margin-right: 20px;
+      .name {
+        margin-right: 10px;
+        font-weight: 600;
+      }
+      .value {
+        color: rgb(163 230 53);
+      }
+    }
+  }
+  .updateBtn {
+    font-size: 18px;
+    font-weight: 600;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: .15s ease-in-out;
+    &:hover {
+      color: #212529;
+      background-color: #fff;
+    }
+  }
+}
